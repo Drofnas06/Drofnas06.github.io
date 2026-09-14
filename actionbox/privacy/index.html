@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy policy for SaveCue, published by SanWareHub.">
+  <title>SaveCue Privacy Policy — SanWareHub</title>
+  <style>
+    :root { color-scheme: light dark; font-family: system-ui, sans-serif; line-height: 1.6; }
+    body { margin: 0; background: #f8f9fd; color: #101418; }
+    main { max-width: 760px; margin: auto; padding: 48px 24px 72px; }
+    h1, h2 { color: #102f4f; line-height: 1.25; }
+    h2 { margin-top: 2rem; }
+    a { color: #285c91; }
+    .meta { color: #52657a; }
+    @media (prefers-color-scheme: dark) {
+      body { background: #101418; color: #e2e2e9; }
+      h1, h2 { color: #a4c9fa; }
+      a { color: #a4c9fa; }
+      .meta { color: #bac9de; }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <h1>SaveCue Privacy Policy</h1>
+  <p class="meta"><strong>Effective date:</strong> September 14, 2026<br>
+    <strong>Publisher:</strong> SanWareHub<br>
+    <strong>Developer:</strong> Sanford<br>
+    <strong>Contact:</strong> <a href="mailto:sanwarehub@gmail.com">sanwarehub@gmail.com</a></p>
+
+  <p>SaveCue is a local-first Android app for saving links, text, and images and bringing them back through reminders. This policy explains how the current release handles data.</p>
+
+  <h2>Data you choose to save</h2>
+  <p>When you share content to SaveCue, the app stores the shared title, text, URL, image, reminder, optional action type, completion state, and resurfacing history locally on your device. Images are copied to private app storage. Recognized text from screenshots is produced and stored on-device.</p>
+  <p>SaveCue does not operate an account system, cloud-sync service, advertising system, or backend that receives this saved content. SanWareHub does not collect, sell, or share saved content. Opening a saved URL sends that URL to the browser or compatible app you choose, which handles it under its own terms and privacy practices.</p>
+
+  <h2>On-device text recognition and technical data</h2>
+  <p>SaveCue uses the bundled Google ML Kit text-recognition SDK. Image recognition runs on the device; SaveCue does not intentionally send the image or recognized text to Google for recognition.</p>
+  <p>Google states that ML Kit Android SDKs collect limited device and application information, per-installation identifiers not intended to uniquely identify a person or physical device, performance metrics, API configuration, input/output sizes, feature versions, event types, and error codes for diagnostics and usage analytics. Google states that this technical data is encrypted in transit and is not shared with third parties. This limited technical collection is performed by Google's SDK, not a SanWareHub analytics service. See <a href="https://developers.google.com/ml-kit/android-data-disclosure">Google's ML Kit disclosure</a>.</p>
+
+  <h2>Permissions and device access</h2>
+  <p>SaveCue requests notification permission when you schedule a reminder or enable resurfacing on Android versions that require it. Images enter the app only through Android's narrow share permission; SaveCue does not request broad photo, media, or storage access.</p>
+  <p>The release also contains operational permissions contributed by AndroidX WorkManager and Google ML Kit: receive boot completion to preserve scheduled work after restart; wake lock and foreground-service access to run eligible background work; network-state access for work constraints; and internet access for ML Kit's documented technical diagnostics. SaveCue blocks cleartext network traffic.</p>
+
+  <h2>Retention and deletion</h2>
+  <p>Saved content remains on your device while the app is installed. Automatic Android cloud backup and device-to-device transfer are disabled. SaveCue currently has no cloud copy, account, or user-facing export service. Uninstalling the app removes its private local data according to Android platform behavior.</p>
+
+  <h2>Children</h2>
+  <p>SaveCue is a general productivity utility and is not directed to children.</p>
+
+  <h2>Changes and contact</h2>
+  <p>Material changes to this policy will be reflected by updating the effective date and published policy. Privacy questions can be sent to SanWareHub at <a href="mailto:sanwarehub@gmail.com">sanwarehub@gmail.com</a>.</p>
+</main>
+</body>
+</html>
