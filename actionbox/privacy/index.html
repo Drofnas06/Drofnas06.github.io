@@ -24,7 +24,7 @@
 <body>
 <main>
   <h1>SaveCue Privacy Policy</h1>
-  <p class="meta"><strong>Effective date:</strong> September 14, 2026<br>
+  <p class="meta"><strong>Effective date:</strong> October 5, 2026<br>
     <strong>Publisher:</strong> SanWareHub<br>
     <strong>Developer:</strong> Sanford<br>
     <strong>Contact:</strong> <a href="mailto:sanwarehub@gmail.com">sanwarehub@gmail.com</a></p>
@@ -32,7 +32,7 @@
   <p>SaveCue is a local-first Android app for saving links, text, and images and bringing them back through reminders. This policy explains how the current release handles data.</p>
 
   <h2>Data you choose to save</h2>
-  <p>When you share content to SaveCue, the app stores the shared title, text, URL, image, reminder, optional action type, completion state, and resurfacing history locally on your device. Images are copied to private app storage. Recognized text from screenshots is produced and stored on-device.</p>
+  <p>When you share content to SaveCue or create an item directly, the app stores its title, text, URL, image, reminder and recurrence settings, optional action type, completion state, and resurfacing history locally on your device. Images are copied to private app storage. Recognized text from screenshots is produced and stored on-device. Calendar views are generated from this locally stored reminder information.</p>
   <p>SaveCue does not operate an account system, cloud-sync service, advertising system, or backend that receives this saved content. SanWareHub does not collect, sell, or share saved content. Opening a saved URL sends that URL to the browser or compatible app you choose, which handles it under its own terms and privacy practices.</p>
 
   <h2>On-device text recognition and technical data</h2>
@@ -43,8 +43,12 @@
   <p>SaveCue requests notification permission when you schedule a reminder or enable resurfacing on Android versions that require it. Images enter the app only through Android's narrow share permission; SaveCue does not request broad photo, media, or storage access.</p>
   <p>The release also contains operational permissions contributed by AndroidX WorkManager and Google ML Kit: receive boot completion to preserve scheduled work after restart; wake lock and foreground-service access to run eligible background work; network-state access for work constraints; and internet access for ML Kit's documented technical diagnostics. SaveCue blocks cleartext network traffic.</p>
 
+  <h2>Private Vault</h2>
+  <p>The optional Private Vault encrypts protected item content and images locally using an authenticated encryption key held by Android Keystore. Opening the Vault uses Android's biometric or device-credential prompt. SaveCue receives only the authentication result and does not receive or store your fingerprint, face data, PIN, pattern, or password.</p>
+  <p>Limited scheduling and lifecycle metadata remains available locally so reminders and item state can continue to work while the Vault is locked. Decrypted image previews are temporary and are removed when the Vault locks or the app starts again. There is no SanWareHub recovery key or cloud copy; clearing app data, uninstalling the app, removing device security, or losing the device can make protected content unrecoverable.</p>
+
   <h2>Retention and deletion</h2>
-  <p>Saved content remains on your device while the app is installed. Automatic Android cloud backup and device-to-device transfer are disabled. SaveCue currently has no cloud copy, account, or user-facing export service. Uninstalling the app removes its private local data according to Android platform behavior.</p>
+  <p>Saved content remains on your device while the app is installed. You can delete individual items, selected items, or all applicable items using SaveCue's deletion controls. Automatic Android cloud backup and device-to-device transfer are disabled. SaveCue currently has no cloud copy, account, or user-facing export service. Clearing SaveCue's app data or uninstalling it removes private local data according to Android platform behavior.</p>
 
   <h2>Children</h2>
   <p>SaveCue is a general productivity utility and is not directed to children.</p>
